@@ -53,14 +53,14 @@ body {
   margin-bottom: 4rem; }
   .heading-primary--main {
     display: block;
-    font-size: 6rem;
+    font-size: 6.8rem;
     font-weight: 400;
     letter-spacing: 3.5rem;
     animation-name: moveInLeft;
     animation-duration: 2s; }
   .heading-primary--sub {
     display: block;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 700;
     letter-spacing: 2.6rem;
     animation-name: moveInRight;
@@ -113,19 +113,19 @@ body {
   background-size: cover;
   background-position: bottom;
   transform: skewY(-7deg);
-  margin-top: -10rem; }
+  margin-top: -15rem; }
   .section-features > * {
     transform: skewY(7deg); }
 
 .section-tours {
   background-color: #f7f7f7;
-  padding: 25rem 0 50rem 0;
-  margin-top: -10rem; }
+  padding: 28rem 0 50rem 0;
+  margin-top: -15rem; }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
-  padding: 1.5rem 3rem;
+  padding: 1.5rem 4.8rem;
   display: inline-block;
   border-radius: 10rem;
   transition: all, .2s;
