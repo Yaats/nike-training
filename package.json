@@ -1,0 +1,14 @@
+{
+  "name": "nike",
+  "version": "1.0.0",
+  "description": "Landing page for nike training",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  }
+}
