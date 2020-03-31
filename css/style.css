@@ -117,10 +117,15 @@ body {
   .section-features > * {
     transform: skewY(7deg); }
 
+.section-tours {
+  background-color: #f7f7f7;
+  padding: 25rem 0 50rem 0;
+  margin-top: -10rem; }
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
-  padding: 1.5rem 4rem;
+  padding: 1.5rem 3rem;
   display: inline-block;
   border-radius: 10rem;
   transition: all, .2s;
@@ -165,7 +170,7 @@ body {
   color: #000;
   display: inline-block;
   text-decoration: none;
-  border-bottom: 1px solid #000;
+  border-bottom: 2px solid #000;
   padding: 3px;
   font-weight: 700;
   transition: all .2s; }
@@ -207,7 +212,7 @@ body {
     transform: scale(0.9); }
 
 .feature-box {
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.75);
   font-size: 1.5rem;
   padding: 2.5rem;
   text-align: center;
@@ -220,13 +225,66 @@ body {
   .feature-box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
 
+.card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 50rem; }
+  .card__side {
+    height: 50rem;
+    transition: all 1s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    background-color: #f7f7f7; }
+    .card__side--back {
+      transform: rotateY(180deg);
+      background-image: linear-gradient(to right bottom, rgba(82, 82, 82, 0.5), rgba(0, 0, 255, 0.5)); }
+  .card:hover .card__side--front {
+    transform: rotateY(-180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0deg); }
+  .card__picture {
+    background-size: cover;
+    height: 23rem;
+    background-blend-mode: screen;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
+    .card__picture--1 {
+      background-image: linear-gradient(to right bottom, #000, blue), url(../img/easy-plan.jpg); }
+    .card__picture--2 {
+      background-image: linear-gradient(to right bottom, #000, green), url(../img/mid-plan.jpg); }
+    .card__picture--3 {
+      background-image: linear-gradient(to right bottom, #000, red), url(../img/hard-plan.jpg); }
+  .card__heading {
+    font-size: 2.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: right;
+    color: #fff;
+    position: absolute;
+    top: 19rem;
+    right: 2rem; }
+  .card__heading-span--1 {
+    background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.2), blue); }
+  .card__heading-span--2 {
+    background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.2), green); }
+  .card__heading-span--3 {
+    background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.2), red); }
+
 .header {
   height: 95vh;
   background-image: linear-gradient(to right bottom, rgba(196, 196, 196, 0.5), #272727), url(../img/header-background.jpeg);
   background-size: cover;
   background-position: top;
   position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
   .header__logo-box {
     position: absolute;
     top: 2rem;
