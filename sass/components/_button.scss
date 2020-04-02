@@ -35,6 +35,15 @@
             }
     }
 
+    &--grey {
+        background-color: $color-grey-light-2;
+        color: $color-white;
+
+            &::after {
+                background-color: rgba($color-black, 0.1);
+            }
+    }
+
     &::after {
         content: "";
         display: inline-block;
